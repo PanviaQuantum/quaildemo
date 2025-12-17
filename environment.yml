@@ -5,4 +5,11 @@ channels:
 dependencies:
   - xeus-python
   - pandas
-  - bqplot
+  - numpy
+  - matplotlib.pylot
+  - bokeh.colors
+  - bokeh.palettes
+  - bokeh.transform
+  - math
+  - json
+  - pprint
