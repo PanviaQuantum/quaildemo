@@ -2,14 +2,8 @@ name: voici
 channels:
   - https://repo.mamba.pm/emscripten-forge
   - conda-forge
-  - conda-forge::tornado  
 dependencies:
   - xeus-python
   - pandas
   - numpy
   - matplotlib
-  - tornado
-  - bokeh
-  - math
-  - json
-  - pprint
