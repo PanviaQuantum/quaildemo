@@ -1,15 +1,13 @@
 name: voici
 channels:
   - https://repo.mamba.pm/emscripten-forge
-  - conda-forge
+  - conda-forge  
 dependencies:
   - xeus-python
   - pandas
   - numpy
-  - matplotlib.pylot
-  - bokeh.colors
-  - bokeh.palettes
-  - bokeh.transform
+  - matplotlib
+  - bokeh
   - math
   - json
   - pprint
