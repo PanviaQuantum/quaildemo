@@ -124,6 +124,7 @@ class program:
                   q = x['tag']['key']
                   cohort.append( q )
                   self.globals['multiverseIndex'][ q ] = (m,v,(xpane,ypane))   # lookup mv + pane by tag
+                  print( q + ' ' + str(m) + ' ' + str(v) + ' x:' + str(xpane) + ' y:' + str(ypane) )
                self.globals['multiverses'].append(cohort)
 
             # Done globals initialization for pane layout 
