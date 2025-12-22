@@ -42,7 +42,7 @@ class draw:
       return
 
    def renderNodes( qnodes, ax, mvLookup, x, y0, y1, x_scale, y_scale, color, fill ):
-      print( qnodes.node.operation + ' ' + qnodes.node.dependent+ ' ' + qnodes.node.independent )
+      # print( qnodes.node.operation + ' ' + qnodes.node.dependent+ ' ' + qnodes.node.independent )
       # adjust vertical position using mvLookup by qubit name
       mv0,v,(xpane,ypane) = mvLookup[ qnodes.node.dependent ]
       mv1,v,(xpane,ypane) = mvLookup[ qnodes.node.independent ]
@@ -155,7 +155,7 @@ class draw:
          mvy = v * mvgap        # delta = 50% of line
          py = y - ypane - mvy    # - is down
          px = x + xpane
-         print( q + ' mv ' + str(mv))
+         # print( q + ' mv ' + str(mv))
          if multiverseOp.observe[0] == True:
             g = localparams('measure', px, py, x_scale, y_scale, color, None )    # draw params
          else:
@@ -171,7 +171,7 @@ class draw:
             mvy = v * mvgap        # delta = 50% of line
             py = y - ypane - mvy + by    # - is down
             px = x + xpane
-            print( q + ' mv ' + str(mv))
+            # print( q + ' mv ' + str(mv))
             if multiverseOp.observe[i] == True:
                g = localparams('measure', px, py, x_scale, y_scale, color, None )    # draw params
             else:
@@ -185,7 +185,7 @@ class draw:
          mvy = v * mvgap        # delta = 50% of line
          py = y - ypane - mvy + by   # - is down
          px = x + xpane
-         print( q + ' mv ' + str(mv))
+         # print( q + ' mv ' + str(mv))
          if multiverseOp.observe[i] == True:
             g = localparams('measure', px, py, x_scale, y_scale, color, None )    # draw params
          else:
