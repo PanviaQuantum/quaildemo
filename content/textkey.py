@@ -11,7 +11,7 @@ class textkey:
       self.font = font0.copy()
       self.font.set_style(style)
       self.font.set_size(size)
-      print( self.font )
+      # print( self.font )
    def textfont(self):
       return self.font
 
