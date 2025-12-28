@@ -154,7 +154,7 @@ class localparams:
          else:
             # print(self.text)
             d = self.font.get_size() * 0.45
-            w = len(self.text) * d * 0.155  # 0.15
+            w = len(self.text) * d * 0.25  # 0.155
             # print(w)
             position = ( self.x - w, self.y - d )
             ax.annotate( self.text, xy = position, xycoords='data')
