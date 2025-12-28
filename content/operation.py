@@ -93,6 +93,8 @@ class operation:
             self.node = quantumAction[action](action, g[0]['tag']['key'], phase)
             return 1   # single qubit node1
          else:
+            action.replace('-Gate','-g')     # abbreviate X-Gate to X-g
+               
             self.node = quantumAction[action](action, g[0]['tag']['key'])
             return 1   # single qubit node1
 
