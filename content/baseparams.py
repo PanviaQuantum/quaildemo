@@ -152,7 +152,7 @@ class localparams:
             ax.text( self.x, self.y, self.text, props, rotation=45 )
             print(self.text)
          else:
-            bbox = {'fc': 'white', 'pad': 4}
+            bbox = {'fc': 'white', 'pad': 4, 'round': 0.1 }
             props = {'ha':'center', 'va': 'center', 'bbox': bbox }
             ax.text( self.x, self.y, self.text, props, rotation=0 )
 
