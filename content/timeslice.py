@@ -115,7 +115,7 @@ class timeslice:
                   self.wires.remove(x.node.dependent)
                   if x.node.operation == 'Store':
                      nodei = self.left.index(x.node.dependent)
-                     print(x.node.operation + x.node.dependent + ' ' + str(nodei) )
+                     # print(x.node.operation + x.node.dependent + ' ' + str(nodei) )
                      self.left[ nodei ] = None  # no left propagation
          if len(self.node2) > 0 and len(self.wires) > 0:
             for x in self.node2:
