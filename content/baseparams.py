@@ -152,11 +152,14 @@ class localparams:
             ax.text( self.x, self.y, self.text, props, rotation=45 )
             print(self.text)
          else:
+            bbox = {'fc': '0.8', 'pad': 4}
+            props = {'ha':'center', 'va': 'center', 'bbox': bbox }
+            ax.text( self.x, self.y, self.text, props, rotation=0 )
+           
             # print(self.text)
             d = self.font.get_size() * 0.45
             w = len(self.text) * d * 0.25  # 0.155
             # print(w)
             position = ( self.x - w, self.y - d )
             ax.annotate( self.text, xy = position, xycoords='data')
-
 
