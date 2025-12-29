@@ -149,7 +149,7 @@ class draw:
          h.render(ax)                # execute draw from params
          #####################################################################################
       elif multiverseOp.operation == 'Collapse':
-         print( 'multiverseOp ' + str(multiverseOp.index) )
+         # print( 'multiverseOp ' + str(multiverseOp.index) )
          q = multiverseOp.group[0]
          mv,v,(xpane,ypane) = mvLookup[ q ]
          mvy = v * mvgap        # delta = 50% of line
