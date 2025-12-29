@@ -80,7 +80,7 @@ class operation:
             elif action == 'Collapse':
                # extract observe True/False on each qubit for Collapse function
                observe = [ q['qubit']['observe'] for q in g ]
-               print(observe)
+               # print(observe)
                self.node = quantumAction[action](action, commands['panvia']['list'], observe, commands['panvia']['command']['item'] )
             else:
                assert False
