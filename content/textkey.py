@@ -2,9 +2,9 @@
 # class contains font properties and supplies font properties for plt.figtext
 # plt.figtext( x, y, text, font, align )
 
-from matplotlib.font_manager import FontProperties
 import logging
 logging.getLogger('matplotlib.font_manager').disabled = True
+from matplotlib.font_manager import FontProperties
 
 class textkey:
    def __init__(self,style,size):
