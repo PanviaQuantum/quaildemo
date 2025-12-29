@@ -147,7 +147,7 @@ class localparams:
       ###############   end of list processing loop ############
       if self.text != None and self.font != None:
          if self.text == 'Connect':
-            bbox = {'fc': '0.8', 'pad': 4}
+            bbox = {'fc': '0.8', 'pad': 4 }
             props = {'ha':'center', 'va': 'center', 'bbox': bbox }
             ax.text( self.x, self.y, self.text, props, rotation=45 )
             print(self.text)
