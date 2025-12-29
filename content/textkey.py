@@ -3,6 +3,8 @@
 # plt.figtext( x, y, text, font, align )
 
 from matplotlib.font_manager import FontProperties
+import logging
+logging.getLogger('matplotlib.font_manager').disabled = True
 
 class textkey:
    def __init__(self,style,size):
