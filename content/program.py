@@ -28,7 +28,7 @@ class program:
    def update(self):
       self.globals['timeslices'] = len(self.future) + len(self.history)
       tcon = self.findConnection()     # locate multiverses
-      print(tcon)
+      # print(tcon)
       if tcon != None:
          # Initialized self.globals.qubits and multiverses
          qubnet = self.propagate(tcon)
@@ -124,7 +124,7 @@ class program:
                   q = x['tag']['key']
                   cohort.append( q )
                   self.globals['multiverseIndex'][ q ] = (m,v,(xpane,ypane))   # lookup mv + pane by tag
-                  print( q + ' ' + str(m) + ' ' + str(v) + ' x:' + str(xpane) + ' y:' + str(ypane) )
+                  # print( q + ' ' + str(m) + ' ' + str(v) + ' x:' + str(xpane) + ' y:' + str(ypane) )
                self.globals['multiverses'].append(cohort)
 
             # Done globals initialization for pane layout 
