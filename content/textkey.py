@@ -2,8 +2,6 @@
 # class contains font properties and supplies font properties for plt.figtext
 # plt.figtext( x, y, text, font, align )
 
-import logging
-logging.getLogger('matplotlib.font_manager').disabled = True
 from matplotlib.font_manager import FontProperties
 
 class textkey:
@@ -13,7 +11,7 @@ class textkey:
       self.font = font0.copy()
       self.font.set_style(style)
       self.font.set_size(size)
-      # print( self.font )
+      print( self.font )
    def textfont(self):
       return self.font
 
