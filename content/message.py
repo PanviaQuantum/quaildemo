@@ -8,5 +8,3 @@ def _recv(msg):
   data = msg['content']['data']
   print(f"Kernel received: {data}")
   my_comm.send({'echo': f"Kernel echoes: {data['message']}"})
-
-my_comm.send({'message': 'Initial message from kernel'})
