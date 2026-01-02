@@ -7,5 +7,4 @@ dependencies:
   - pandas
   - numpy
   - matplotlib
-  - ipykernel
   - IPython
